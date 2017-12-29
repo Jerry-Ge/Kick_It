@@ -1,0 +1,390 @@
+/*
+Team Member:
+Natalie Monger, Yifei Xavier Liu, Jason Woodruff, Yuzhou Jerry Ge, Bradley Nguyen
+*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: block;
+}
+.clearfix:after {
+	clear: both;
+}
+
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, form, a, p, textarea {
+	margin:0;
+	padding: 0;
+	font-family: Helvetica;
+}
+
+
+body {
+	height: 100%;
+}
+ol, ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	color:#000;
+}
+
+a:visited {
+	color:#000;
+}
+
+img {
+	border:none;
+	display: block;
+}
+
+div {
+	padding: 0;
+	margin:0;
+	border-width: 0;
+}
+
+#main-canvas {
+	width:100%;
+	height:100%;
+	background-color: #000;
+}
+
+
+.inline-block {
+	display: inline-block;
+}
+
+#top-menu {
+	width:100%;
+	height:10%;
+	background-color: yellow;
+}
+
+#top-menu #main-logo {
+	font-size: 35px;
+	font-style: italic;
+}
+
+#main-logo {
+	float: left;
+	white-space: nowrap;
+	width: 60%;
+	height:100px;
+	background-color: #000;
+	text-align: center;
+	color: yellow;
+}
+
+#main-logo h1{
+	margin-top: 18px;
+}
+
+#main-user {
+	float: left;
+	white-space: nowrap;
+	width: 40%;
+	height: 100px;
+	background-color: green;
+}
+
+#main-notification {
+	float: left;
+	white-space: nowrap;
+	width: 15%;
+	height: 100px;
+	background-color: yellow;
+	background-image: url("../images/icon-message.png");
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+#main-user-icon {
+	float: left;
+	white-space: nowrap;
+	width: 15%;
+	height: 100px;
+	background-color: #fff;
+	background-image: url("../images/default-avatar.png");
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+#main-user-name {
+	float: left;
+	white-space: nowrap;
+	width: 50%;
+	height: 100px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center; 
+	text-align: middle;
+}
+
+#main-user-name p {
+	position: relative;
+	top: 45px;
+}
+
+#main-user-click {
+	float: left;
+	white-space: nowrap;
+	width: 20%;
+	height: 100px;
+	background-color: #AAA;
+	background-image: url("../images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: center; 
+	text-align: middle;
+}
+
+#main-user-click:hover {
+	float: left;
+	white-space: nowrap;
+	width: 20%;
+	height: 100px;
+	background-color: yellow;
+	background-image: url("../images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: center; 
+	text-align: middle;
+
+}
+
+.quote-button {
+	display: block;
+	width: 100px;
+	height: 100px;
+	color: #aaa;
+}
+
+.quote-button:hover {
+	display: block;
+	width: 100px;
+	height: 100px;
+	color: yellow;
+}
+
+
+#toggle-user-info {
+	background-color: yellow;
+	position: absolute;
+	width: 400px;
+	height:420px;
+	left: 75%;
+	top: 100px;
+	z-index: 999;
+	overflow-y:scroll;
+}
+
+
+
+#main-room-wrapper {
+	float: left;
+	white-space: nowrap;
+	width: 100%;
+	height: 80%;
+	background:linear-gradient(#000, #aaa);
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+#main-room {
+	float: left;
+	white-space: nowrap;
+	width: 100%;
+	height: 80%;
+	max-height: 900px;
+	min-height: 900px;
+	background:linear-gradient(#000, #aaa);;
+	background-position: center; 
+}
+
+#main-sidebar {
+	float: left;
+	white-space: nowrap;
+	width: 400px;
+	height: 1000px;
+	background-color: #6BF;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+#side-buttom {
+    margin: 0 auto;
+
+    /*position: relative;*/
+    margin-bottom: 5px;
+    margin-top: 5px;
+	width: 350px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: yellow;
+	text-align: center;
+}
+
+#side-buttom:hover{
+    margin: 0 auto;
+
+    /*position: relative;*/
+    margin-bottom: 5px;
+    margin-top: 5px;
+	width: 350px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: yellow;
+	text-align: center;
+	background-color: red;
+}
+
+
+#side-buttom p{
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+
+#footer {
+	display: block;
+	position: relative;
+	background-color: #aaa;
+	top:150%;
+	height: 8%;
+}
+
+
+#myform {
+	/*text-align: center;*/
+	font-size: 20px;
+	color: #fff;
+	/*border-width: 1px;*/
+	border-style: solid;
+	width: 30%;
+	margin:0 auto;
+}
+
+#googlemap {
+	display: block;
+}
+
+#submit-buttom1 {
+	background-color: #32cd32; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#submit-buttom2 {
+	background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#submit-buttom3 {
+	background-color: #32cd32; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    top:-3px;
+}
+
+
+#submit-buttom1:hover {
+	background-color: #32cd32; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+#submit-buttom2:hover {
+	background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+#submit-buttom3:hover {
+	background-color: #32cd32; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    top:-3px;
+    opacity: 0.5;
+}
+
+
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size:24px;
+    /*box-sizing: border-box;*/
+}
+
+select {
+	width: 40%;
+	font-size: 20px;
+	border: 1px solid #ccc;
+}
+
+textarea {
+	font-size: 18px;
+}
+
+#gameDate {
+	font-size: 18px;
+}
+
+#gameTime {
+	font-size: 18px;
+}
+#onlineUsers {
+	position: relative;
+	left:155px;
+}
+
+#onlineLabel {
+	
+	position: relative;
+	left:155px;
+	text-decoration: underline;
+}
